@@ -1,0 +1,30 @@
+.swiperShowInPhone-container {
+    width: 100%;
+    position: relative;
+    &:hover {
+        .delete {
+            display: block;
+        }
+    }
+    .delete {
+        width: 25px;
+        position: absolute;
+        z-index: 100;
+        top: 0;
+        right: 0;
+        display: none;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    .swiper-bg {
+        width: 100%;
+        display: block;
+    }
+    ._swiper-container {
+        width: 100%;
+    }
+    .slick-arrow.slick-next {
+        opacity: 0;
+    }
+}

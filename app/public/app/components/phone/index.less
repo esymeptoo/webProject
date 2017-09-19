@@ -1,0 +1,66 @@
+.phone-container {
+    position: fixed;
+    left: 100px;
+    right: 30%;
+    background: #ededed;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+    .inner-phone {
+        width: 340px;
+        height: 697px;
+        .inner-container {
+            width: 93%;
+            margin: auto;
+            margin-top: 88px;
+            height: 560px;
+            overflow-y: auto;
+            overflow-x: hidden;
+            position: relative;
+            .out-container {
+                position: relative;
+                &:hover {
+                    .delete {
+                        display: block;
+                    }
+                    .up {
+                        display: block;
+                    }
+                }
+                .delete, .up {
+                    width: 25px;
+                    position: absolute;
+                    z-index: 100;
+                    bottom: 0;
+                    right: 0;
+                    display: none;
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+                .up {
+                    right: 30px;
+                }
+            }
+        }
+    }
+    .submit {
+        background: #BD97EA;
+        position: absolute;
+        right: 30px;
+        top: 30px;
+        width: 70px;
+        height: 28px;
+        border-width: 0;
+        border-radius: 4px;
+        color: white;
+        transform-origin: 50%, 50%;
+        transition: all .3s linear;
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.2)
+        }
+    }
+}
